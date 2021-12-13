@@ -1,0 +1,157 @@
+@font-face {
+	src: url(../fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+	src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+
+.root {
+    primary: #c2185b;
+    primary-light: #f95688;
+	primary-dark: #8b0032;
+	secondary: #ef9a9a;
+	secondary-light: #ffcccb;
+	secondary-dark: #ba6b6c;
+}
+
+.profile-container {
+
+	-fx-background-color: primary-dark;
+
+}
+
+.app-bar {
+	
+	-fx-background-color: primary;
+	-fx-effect: dropshadown( gaussian, 
+rgba(0,0,0,0.23), 12,0.7, 0, 1);
+}
+
+.icon-button {
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size:  stretch;
+	-fx-cursor: hand;
+}
+
+#archive-button {
+	-fx-rotate: -45deg;
+	-fx-background-image: url(../icons/attachment.png);
+}
+
+#more-button {
+	-fx-background-image: url(../icons/more_vert.png);
+}
+
+#chat-button {
+	-fx-background-image: url(../icons/chat.png);
+}
+
+#add-button {
+	-fx-background-image: url(../icons/person_add.png);
+}
+
+#edit-button {
+	-fx-background-image: url(../icons/edit_white.png);
+}
+
+
+#usr-image-container {
+
+	-fx-padding: 4px 0 4px 0;
+
+}
+
+#usr-image {
+	
+
+}
+
+.background-pane {
+
+	-fx-background-image: url(../icons/doodle.png);
+	-fx-background-size: 250 250;
+}
+
+#message-list {
+	-fx-background-color: transparent;
+}
+
+#usr-name-label {
+	-fx-font-family: 'Work Sans Bold';
+	-fx-text-fill: white;
+	-fx-font-size: 20px;
+}
+
+#usr-name-label-container {
+
+
+}
+
+
+#user-action-container {
+	-fx-padding: 6px 0 6px 0;
+	-fx-spacing: 35px;
+
+}
+
+
+#contact-image-container {
+	-fx-spacing: 10px;
+	-fx-padding: 0 0 0 15px;
+}
+
+#contact-name-label {
+	-fx-font-family: 'Work Sans Bold';
+	-fx-font-size: 16px;
+	-fx-text-fill: white;
+}
+
+#contact-desc-label {
+	-fx-font-family: 'Work Sans Regular';
+	-fx-text-fill: white;
+}
+
+#contact-label-container {
+	-fx-spacing: 4px;
+
+}
+
+#contact-action-container {
+	-fx-spacing: 16px;
+	-fx-padding: 0 15px 0 0;
+}
+
+#input-container {
+	-fx-background-color: white;
+	-fx-background-radius: 20px;
+	-fx-padding: 3px 10px 3px 10px;
+	-fx-border-width: 2px;
+	-fx-border-radius: 20px;
+	-fx-border-color: #777;
+	-fx-spacing: 5px;
+}
+
+#text-input {
+	
+	-fx-background-insets: 0;
+	-fx-background-color: transparent;
+}
+
+
+#send-button {
+
+	-fx-background-image: url(../icons/send_black.png);
+}
+
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+

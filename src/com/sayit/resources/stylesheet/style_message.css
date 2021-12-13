@@ -1,0 +1,48 @@
+@font-face{
+	src: url(../fonts/WorkSans-Light.ttf);
+}
+
+.root {
+    primary: #c2185b;
+    primary-light: #f95688;
+	primary-dark: #8b0032;
+	secondary: #ef9a9a;
+	secondary-light: #ffcccb;
+	secondary-dark: #ba6b6c;
+}
+
+.message-box {
+
+	-fx-background-radius: 10px;
+	-fx-padding: 12px;
+	-fx-background-color: white;
+	-fx-effect: 
+dropshadow(gaussian, rgba(100, 100, 100, 0.3), 8, 0.3, 0, 2);
+}
+
+
+.time-box {
+	-fx-padding: 0 0 0 50px;
+
+}
+
+
+#text-message {
+	-fx-font-family: 'Work Sans Light';
+	-fx-font-size: 15px;
+
+}
+
+
+
+#time-message {
+
+	-fx-font-size: 10px;
+	-fx-text-fill: gray;
+}
+
+
+#user-message {
+	-fx-background-color: secondary-light;
+
+}

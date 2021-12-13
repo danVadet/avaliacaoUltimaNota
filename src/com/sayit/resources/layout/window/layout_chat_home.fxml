@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="455.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sayit.ui.control.frame.ChatHomeController">
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <VBox styleClass="background-pane"/>
+                <VBox>
+                    <children>
+                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="57.0" prefWidth="414.0"
+                              styleClass="app-bar">
+                            <children>
+                                <HBox id="contact-image-container" alignment="CENTER_LEFT" prefHeight="100.0">
+                                    <children>
+                                        <Circle fx:id="contactImage" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </Circle>
+                                        <VBox id="contact-label-container" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Label id="contact-name-label" fx:id="contactNameLabel" text="Label" />
+                                                <Label id="contact-desc-label" fx:id="contactStatusLabel" text="Label" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox id="contact-action-container" fx:id="tabButtonsContainer" alignment="CENTER_RIGHT"
+                                      HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <Button id="archive-button" mnemonicParsing="false" onAction="#sendArchive" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button" />
+                                        <Button id="more-button" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </Button>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <VBox fx:id="listGlassPanel" VBox.vgrow="ALWAYS">
+                            <children>
+                                <ListView id="message-list" fx:id="messageListView" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets/>
+                                    </VBox.margin>
+                                </ListView>
+                            </children>
+                        </VBox>
+                        <HBox id="input-container" fx:id="inputContainer" alignment="BOTTOM_CENTER"
+                              VBox.vgrow="SOMETIMES">
+                            <children>
+                                <TextArea id="text-input" fx:id="messageField" minHeight="-Infinity" prefHeight="25.0" promptText="Digite uma mensagem..." wrapText="true" HBox.hgrow="ALWAYS" />
+                                <Button id="send-button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button" />
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="60.0" right="60.0"/>
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+    <right>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <VBox>
+                    <children>
+                        <HBox id="usr-image-container" alignment="CENTER" styleClass="profile-container">
+                            <children>
+                                <Circle id="usr-image" fx:id="userImage" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                            </children>
+                        </HBox>
+                        <HBox id="usr-name-label-container" alignment="CENTER" styleClass="profile-container">
+                            <children>
+                                <Label id="usr-name-label" fx:id="userNameLabel" text="Label" />
+                            </children>
+                        </HBox>
+                        <HBox id="user-action-container" alignment="CENTER" styleClass="profile-container">
+                            <children>
+                                <Button id="chat-button" mnemonicParsing="false" onAction="#showFindContact" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button" />
+                                <Button id="add-button" mnemonicParsing="false" onAction="#showAddContact" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button" />
+                                <Button id="edit-button" mnemonicParsing="false" onAction="#showEditProfile" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button" />
+                            </children>
+                        </HBox>
+                        <ListView fx:id="historyListView" prefHeight="329.0" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+                <Pane fx:id="findPane" prefHeight="200.0" prefWidth="200.0" visible="false" />
+            </children>
+        </StackPane>
+    </right>
+</BorderPane>

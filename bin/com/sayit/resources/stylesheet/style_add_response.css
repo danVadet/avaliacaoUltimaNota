@@ -1,0 +1,63 @@
+
+.root-container {
+
+	-fx-spacing: 20px;
+	-fx-background-color: white;
+	-fx-border-width: 0 0 2px 0;
+	-fx-border-color: black;
+}
+
+.header-container {
+
+	-fx-alignment: center;
+	-fx-padding: 10px 6px 0 6px;
+}
+
+
+
+.image-container {
+
+	-fx-alignment: center;
+
+}
+
+
+.name-container {
+
+	-fx-alignment: center;
+
+}
+
+
+.buttons-container {
+
+	-fx-alignment: center;
+	-fx-spacing: 100px;
+	-fx-padding: 0 0 10px 0;
+}
+
+#header-text {
+
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+
+#name-text {
+
+	-fx-font-size: 16px;
+}
+
+
+#cancel-button {
+
+	-fx-background-color: #d32f2f;
+	-fx-text-fill: white;
+}
+
+
+#accept-button {
+
+	-fx-background-color: #4b830d;
+	-fx-text-fill: white;
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<VBox maxWidth="300.0" minHeight="-Infinity" minWidth="-Infinity" styleClass="message-box"
+      xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.sayit.ui.control.view.MessageViewController">
+      <children>
+          <TextFlow maxWidth="300.0">
+              <children>
+                  <Text id="text-message" fx:id="mainText" strokeType="OUTSIDE" strokeWidth="0.0"
+                        text="Maria tenta entender que sua mãe é doida"/>
+              </children>
+          </TextFlow>
+          <HBox alignment="BOTTOM_RIGHT" styleClass="time-box">
+              <children>
+                  <Label id="time-message" fx:id="timeLabel" text="12:00 AM" />
+              </children>
+              <VBox.margin>
+                  <Insets />
+              </VBox.margin>
+          </HBox>
+      </children>
+  </VBox>

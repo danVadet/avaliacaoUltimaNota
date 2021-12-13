@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<VBox minHeight="-Infinity" minWidth="-Infinity" styleClass="root-containt" xmlns="http://javafx.com/javafx/9"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sayit.ui.control.frame.ProfileEditController">
+    <children>
+        <HBox alignment="CENTER_LEFT" minHeight="57.0" styleClass="header">
+            <children>
+                <Button id="back-button" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="26.0"
+                        styleClass="icon-button"/>
+            </children>
+        </HBox>
+        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="image-container">
+            <children>
+                <Circle id="image-view" fx:id="roundImage" fill="DODGERBLUE" onMouseClicked="#getImage" radius="70.0"
+                        stroke="BLACK" strokeType="INSIDE">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT"/>
+                    </cursor>
+                </Circle>
+                <Label id="add-photo-icon" onMouseClicked="#getImage" prefHeight="26.0" prefWidth="26.0" styleClass="icon-button" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="20.0" left="60.0" />
+               </StackPane.margin>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT"/>
+                    </cursor>
+                </Label>
+            </children>
+        </StackPane>
+      <HBox styleClass="name-container">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+         <children>
+             <Label id="name-label" onMouseClicked="#requestEditFocus" text="Nome">
+                 <cursor>
+                     <Cursor fx:constant="DEFAULT"/>
+                 </cursor>
+             </Label>
+             <Label id="edit-icon" onMouseClicked="#requestEditFocus" prefHeight="15.0" prefWidth="15.0">
+                 <cursor>
+                     <Cursor fx:constant="DEFAULT"/>
+                 </cursor>
+             </Label>
+         </children>
+      </HBox>
+        <HBox>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+            <children>
+                <TextField id="name-input" fx:id="nameField" promptText="Nome"/>
+            </children>
+        </HBox>
+        <HBox id="confirm-container" alignment="BOTTOM_RIGHT" VBox.vgrow="ALWAYS">
+            <children>
+                <Button id="confirm-button" mnemonicParsing="false" onAction="#confirm" text="OK" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

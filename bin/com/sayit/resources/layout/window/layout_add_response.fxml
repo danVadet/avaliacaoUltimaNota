@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<VBox minHeight="-Infinity" minWidth="-Infinity" styleClass="root-container" xmlns="http://javafx.com/javafx/9"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sayit.ui.control.frame.AddResponseController">
+    <children>
+        <HBox styleClass="header-container">
+            <children>
+                <Label id="header-text" text="Você recebeu uma solicitação de contato:"/>
+            </children>
+        </HBox>
+        <HBox styleClass="image-container" VBox.vgrow="ALWAYS">
+            <children>
+                <Circle fx:id="imageView" fill="DODGERBLUE" radius="100.0" stroke="BLACK" strokeType="INSIDE"/>
+            </children>
+        </HBox>
+        <HBox styleClass="name-container">
+            <children>
+                <Label fx:id="nameLabel" id="name-text" text="Label"/>
+            </children>
+        </HBox>
+        <HBox styleClass="buttons-container">
+            <children>
+                <Button id="cancel-button" mnemonicParsing="false" onAction="#cancel" text="RECUSAR"/>
+                <Button id="accept-button" mnemonicParsing="false" onAction="#accept" text="ACEITAR"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

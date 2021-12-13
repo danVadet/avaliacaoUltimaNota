@@ -1,0 +1,69 @@
+@font-face {
+	src: url(../fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+	src: url(../fonts/WorkSans-Light.ttf);
+}
+
+.root {
+    primary: #c2185b;
+    primary-light: #f95688;
+	primary-dark: #8b0032;
+	secondary: #ef9a9a;
+	secondary-light: #ffcccb;
+	secondary-dark: #ba6b6c;
+}
+
+.root-background {
+
+    -fx-background-color: 
+    radial-gradient(radius 120%, primary, primary-light, secondary);
+
+}
+
+.content-frame {
+
+    -fx-background-color: white;
+    -fx-effect:
+    dropshadow(gaussian , rgba(100, 100, 100, 0.3) , 8 , 0.5 , 0 , 1 );
+}
+
+.root-frame {
+
+    -fx-padding: 6px 12px 8px 12px;
+    -fx-spacing: 20px;
+	-fx-background-color: white;
+}
+
+.content-text {
+    
+}
+
+#start-header{
+    -fx-background-repeat: no-repeat;
+	-fx-background-size: stretch;
+   -fx-background-image: url(../icons/sayit_logo.png);
+/*-fx-font-family: 'Work Sans Bold';
+    -fx-font-size: 32px;*/
+}
+
+#start-message {
+    -fx-font-family: 'Work Sans Light';
+    -fx-font-size: 22px;
+}
+
+.material-button {
+    -fx-font-family: 'Work Sans Bold';
+    -fx-background-color: primary;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-effect:
+    dropshadow(gaussian , rgba(50, 50, 50, 0.3) , 5 , 0.3 , 0 , 2 );
+
+}
+
+.material-button:hover {
+    -fx-effect:
+    dropshadow(gaussian , rgba(50, 50, 50, 0.3) , 8 , 0.4 , 0 , 3 );
+
+}

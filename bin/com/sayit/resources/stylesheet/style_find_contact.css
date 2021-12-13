@@ -1,0 +1,60 @@
+
+.root-container {
+
+	-fx-background-color: white;
+
+}
+
+.app-bar {
+	
+	-fx-background-color: white;
+	-fx-effect: dropshadow( gaussian, 
+rgba(50,50,50, 0.3), 8,0.3, 0, 1);
+}
+
+.search-container {
+
+	-fx-spacing: 10px;
+	-fx-padding: 0 10px 0 10px;
+}
+
+.icon-button {
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size:  stretch;
+	-fx-cursor: hand;
+}
+
+.search-input {
+	-fx-background-color: transparent;
+	
+}
+
+.search-input:focused {
+	-fx-border-width: 0 0 2px 0;
+	-fx-border-color: black;
+	
+}
+
+#back-button {
+	-fx-background-image:
+url(../icons/arrow_back_black.png);
+
+}
+
+
+#search-button {
+	-fx-background-image: 
+url(../icons/search_black.png);
+
+
+}
+
+
+#list-view {
+	-fx-padding: 3px ;
+	-fx-background-color: transparent;
+	-fx-padding: 0;
+
+}
+

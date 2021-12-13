@@ -1,0 +1,119 @@
+@font-face {
+	src: url(../fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+	src: url(../fonts/WorkSans-Light.ttf);
+}
+
+
+.root-containt {
+	primary: #c2185b;
+    primary-light: #f95688;
+	primary-dark: #8b0032;
+	secondary: #ef9a9a;
+	secondary-light: #ffcccb;
+	secondary-dark: #ba6b6c;
+	-fx-background-color: white;
+	-fx-spacing: 2px;
+	-fx-background-color:
+	radial-gradient(center 0% -10%, radius 110%,rgb(235, 179, 27), primary-light, secondary-light)
+	,linear-gradient(from 10px 20px to -10px 80px, transparent 90%, white)
+}
+
+.header {
+	-fx-padding: 10px;
+}
+
+
+.icon-button {
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size:  stretch;
+	-fx-cursor: hand;
+}
+
+
+#back-button {
+
+	-fx-background-image: 
+url(../icons/arrow_back_white.png);
+
+
+}
+
+
+
+#confirm-button {
+	-fx-font-family: 'Work Sans Bold';
+	-fx-background-color: transparent;
+	-fx-text-fill: #f95688;
+	-fx-cursor: hand;
+	-fx-font-size: 18px;
+}
+
+
+#add-photo-icon {
+
+	-fx-background-image: 
+url(../icons/add_a_photo.png);
+	
+}
+
+
+#image-view {
+	-fx-stroke-width: 0px;
+	-fx-cursor: hand;
+	-fx-effect:
+	dropshadow(gaussian, rgba(50, 50, 50, 0.5), 8, 0.3, 1, 1);
+}
+
+.image-container {
+
+
+}
+
+.name-container {
+
+	-fx-spacing: 5px;
+}
+
+#name-input {
+
+	-fx-background-color: transparent;
+	-fx-font-size: 14px;
+}
+
+
+#name-input:focused{
+
+	-fx-border-width: 0 0 2px 0;
+	-fx-border-color: black;
+}
+
+
+
+#name-label {
+
+	-fx-font-family: 'Work Sans Bold';
+	-fx-font-size: 18px;
+	-fx-cursor: hand;
+}
+
+#edit-icon {
+
+	-fx-background-image:
+url(../icons/edit_black.png);
+	-fx-cursor: hand;
+
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size:  stretch;
+
+}
+
+
+#confirm-container {
+
+
+	-fx-padding: 0 5px 3px 0;
+}

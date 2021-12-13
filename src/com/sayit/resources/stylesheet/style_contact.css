@@ -1,0 +1,66 @@
+
+@font-face {
+	src: url(../fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+	src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+.root-container {
+
+	-fx-background-color: transparent;
+	-fx-padding: 3px 10px 3px 10px;
+	-fx-spacing: 10px;
+	-fx-border-width: 0px;
+}
+.root-container:selected {
+	-fx-text-fill: black;
+}
+.list-cell {
+    -fx-padding: 2px ;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px, 2px ;
+}
+
+.list-cell:empty {
+    -fx-padding: 2px ;
+    -fx-background-color: transparent ;
+    -fx-background-insets: 0 ;
+}
+
+
+.list-cell:selected{
+	-fx-background-color: rgba(211, 211, 211, 0.6);	
+}
+
+
+
+
+.label-container {
+
+	-fx-spacing: 6px;
+
+}
+
+.time-container {
+
+
+	-fx-padding: 6px 0 0 0;
+}
+
+.name-label {
+	-fx-font-family: 'Work Sans Bold';
+	-fx-text-fill: black;
+	-fx-font-size: 14px;
+}	
+
+
+.desc-label {
+	-fx-font-family: 'Work Sans Regular';
+	-fx-font-size: 12px;
+	-fx-text-fill: gray;
+}	
+
+.line-divisor {
+	-fx-background-color: lightgray;
+}
